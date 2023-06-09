@@ -2,6 +2,6 @@
 ##
 ## Документация
 * [Задание](documents/README.md)
-* [План автоматизации](documents/INSTRUMENTS.md)
+* [План автоматизации](documents/PLAN.md)
 * [Отчет об автоматизированном тестировании](documents/REPORT.md)
 * [Отчет об автоматизации](dociments/FINAL_REPORT.md)
