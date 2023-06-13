@@ -12,7 +12,6 @@ services:
     container_name: pstg-container
     ports:
       - '5432:5432'
-
     environment:
       - POSTGRES_PASSWORD=pass
       - POSTGRES_USER=app
