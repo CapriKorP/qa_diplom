@@ -8,8 +8,9 @@
 
 
 ## Запуск проекта
-* Сколонировать [проект](https://github.com/CapriKorP/qa_diplom) в свой репозиторий
-* Открыть в IntelliJ IDEA
-* В терминале IDEA ввести docker-compose up*  
+1. Сколонировать [проект](https://github.com/CapriKorP/qa_diplom) в свой репозиторий
+2. Открыть в IntelliJ IDEA
+3. В терминале IDEA ввести ```docker-compose up```*  
 
-  (* - если запуск на Windows не происходит, то предварительно запустить приложение Docker Desktop)
+  (* - если запуск на Windows не происходит, то предварительно запустить приложение Docker Desktop)  
+4. В терминале ввести команду  
