@@ -5,18 +5,18 @@ services:
     ports:
       - '3306:3306'
     environment:
-        - MYSQL_RANDOM_ROOT_PASSWORD=yes
-        - MYSQL_DATABASE=app
-        - MYSQL_USER=app
-        - MYSQL_PASSWORD=pass
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_DATABASE=mysql
+      - MYSQL_USER=app
+      - MYSQL_PASSWORD=pass
   postgres:
     image: postgres:latest
     ports:
       - '5432:5432'
     environment:
-      - POSTGRES_DB=app
+      - POSTGRES_DB=postgres
       - POSTGRES_USER=app
-      - POSТGRES_PASSWORD=pass
+      - POSTGRES_PASSWORD=pass
   node-app:
     build: .
     image: node-app:1.0
