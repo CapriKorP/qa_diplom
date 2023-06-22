@@ -32,7 +32,7 @@ public class CreditTest {
         SQLService.clear();
     }
 
-    /*@Test
+    @Test
     @DisplayName("Покупка в кредит активной картой")
     public void successfulCreditApprovedCardCredit() {
         page.buyCredit();
@@ -368,14 +368,13 @@ public class CreditTest {
         page.buttonContinue();
         page.success();
     }
-    */
+
     @Test
     @DisplayName("Покупка в кредит с активной карты, регистрация записи в БД")
     void successfulCreditApprovedCardCreditWithDBCheck() throws SQLException, InterruptedException {
         page.buyCredit();
         page.Card(DataService.approvedCardNumber(), DataService.thisMonth(), DataService.year(), DataService.cardHolder(), DataService.cvv());
         page.buttonContinue();
-        //page.success();
         Thread.sleep(5000);
         assertEquals("APPROVED", SQLService.checkCreditStatus());
     }
@@ -387,7 +386,6 @@ public class CreditTest {
         page.buyCredit();
         page.Card(DataService.declinedCardNumber(), DataService.thisMonth(), DataService.year(), DataService.cardHolder(), DataService.cvv());
         page.buttonContinue();
-        //page.error();
         Thread.sleep(5000);
         assertEquals("DECLINED", SQLService.checkCreditStatus());
     }

@@ -32,7 +32,6 @@ public class PaymentTest {
         SQLService.clear();
     }
 
-    /*
     @Test
     @DisplayName("Покупка активной картой")
     public void successfulPayApprovedCardPay() {
@@ -366,14 +365,12 @@ public class PaymentTest {
         page.buttonContinue();
         page.success();
     }
-    */
     @Test
     @DisplayName("Покупка с активной карты, регистрация записи в БД")
     void successfulPayApprovedCardPayWithDBCheck() throws SQLException, InterruptedException {
         page.payCard();
         page.Card(DataService.approvedCardNumber(), DataService.thisMonth(), DataService.year(), DataService.cardHolder(), DataService.cvv());
         page.buttonContinue();
-        //page.success();
         Thread.sleep(5000);
         assertEquals("APPROVED", SQLService.checkPaymentStatus());
     }
@@ -385,7 +382,6 @@ public class PaymentTest {
         page.payCard();
         page.Card(DataService.declinedCardNumber(), DataService.thisMonth(), DataService.year(), DataService.cardHolder(), DataService.cvv());
         page.buttonContinue();
-        //page.error();
         Thread.sleep(5000);
         assertEquals("DECLINED", SQLService.checkPaymentStatus());
     }
