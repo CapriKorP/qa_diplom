@@ -27,7 +27,7 @@ Suite CreditTest Report
 Suite PaymentTest Report
 ![Suites Payment report mySQL](https://github.com/CapriKorP/qa_diplom/assets/122346047/9b1b1a32-efdc-4c67-bb8c-0b79b6a4be8c)
 
-### Отчет Allure c подключенным MySQL 
+### Отчет Allure c подключенным PostgreSQL 
 Overview Report 
 ![Overview report PostgreSQL](https://github.com/CapriKorP/qa_diplom/assets/122346047/7dc4bb64-09cc-4d48-9d14-c7bb085293cb)
 
